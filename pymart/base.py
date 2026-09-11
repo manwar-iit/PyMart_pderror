@@ -209,7 +209,7 @@ class DataBase(Base):
         contained in oen base
 
     """
-    name: str = ""
+    name: str = field(default_factory=str)
     display_name: str = ""
     _datasets: pd.DataFrame = field(init=False)
 
